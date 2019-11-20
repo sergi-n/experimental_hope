@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/bpg-arial-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Glaho';
+    src: url('../fonts/bpg-glaho-webfont.ttf');
+}
+
+body {
+    margin: 0;
+    background-color: rgba(227, 228, 232, 1);
+}
+
+table,
+td {
+    border-spacing: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px 0;
+}
+
+.gass {
+    margin: auto;
+    /*  */
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 20px;
+    background-color: rgba(82, 111, 255, 0.7);
+    box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
+    overflow: hidden;
+    transition: width 500ms, height 500ms;
+}
+
+.gass_extended {
+    width: 350px;
+    height: 200px;
+}
+
+.gass .circle_1 {
+    position: absolute;
+    z-index: -1;
+    right: -240px;
+    top: -430px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(82, 111, 255, 0.6);
+    transition: right 1000ms;
+}
+
+.gass .circle_1_extended {
+    right: -150px;
+}
+
+.gass .circle_2 {
+    position: absolute;
+    z-index: -2;
+    right: -340px;
+    top: -380px;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(82, 111, 255, 0.6);
+    transition: top 1000ms;
+}
+
+.gass .circle_2_extended {
+    top: -300px;
+}
+
+.gass .icon {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.gas .icon img {
+    display: block;
+}
+
+.gass .title_container {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    margin: 5px 0 0;
+    transition: left 500ms, top 500ms;
+}
+
+.gass .title_container_extended {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    margin: 5px 0 0;
+}
+
+.gass .title {
+    font-family: 'Glaho';
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.gass .subtitle {
+    margin: 5px 0 0;
+    font-family: 'Glaho';
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gass .gass_form {
+    position: absolute;
+    left: 10px;
+    top: 100px;
+}
+
+.gass input {
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    width: 250px;
+    height: 25px;
+    font-family: 'Glaho';
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: transparent;
+}
+
+.gass button {
+    box-sizing: border-box;
+    height: 25px;
+}
