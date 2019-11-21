@@ -11,8 +11,8 @@
 
 <body>
     <div class="container">
-        <div class="utility gass" onclick="show_hide_utility('gass', 'show', event)">
-            <div class="close" onclick="show_hide_utility('gass', 'hide', event)">
+        <div class="utility gass" onclick="show_hide_utility('gass')">
+            <div class="close" onclick="show_hide_utility('gass')">
                 <img src="./images/icons/close.svg">
             </div>
             <div class="circle_1"></div>
@@ -37,12 +37,12 @@
     <script>
         function show_hide_utility(div, action, event) {
 
-            // console.log(event.target);
+            console.log(event.target);
 
             div = document.getElementsByClassName(div)[0];
 
             if (action == 'show') {
-                // console.log('gaxsna');
+
                 div.classList.add('utility_container_extended');
                 div.classList.add('utility_extended');
                 div.getElementsByClassName('circle_1')[0].classList.add('circle_1_extended');
@@ -50,7 +50,7 @@
                 div.getElementsByClassName('title_container')[0].classList.add('title_container_extended');
                 div.getElementsByClassName('utility_form')[0].classList.add('show_utility_form');
             } else if (action == 'hide') {
-                // console.log('daxurva');
+
                 div.classList.remove('utility_extended');
                 div.getElementsByClassName('circle_1')[0].classList.remove('circle_1_extended');
                 div.getElementsByClassName('circle_2')[0].classList.remove('circle_2_extended');

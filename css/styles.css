@@ -158,11 +158,6 @@ td {
 
 /* Extended utility */
 
-.utility_container_extended {
-    width: 400px;
-    height: 250px;
-}
-
 .utility_extended {
     width: 400px;
     height: 250px;
@@ -181,7 +176,7 @@ td {
     top: 10px;
 }
 
-.utility_container .close {
+.utility .close {
     position: absolute;
     z-index: 5;
     right: 15px;
