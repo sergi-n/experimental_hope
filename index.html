@@ -12,15 +12,38 @@
 <body>
     <div class="container">
 
-        <div class="utility gass" onclick="show_hide_utility('gass', event)">
+        <div class="utility pti" onclick="show_hide_utility('pti', event)">
 
-            <div class="close" onclick="show_hide_utility('gass', event)">
-                <img class="close_icon" src="./images/icons/close-gas.svg">
-
+            <div class="icon">
+                <img src="./images/icons/gas-tank.svg">
             </div>
+
+            <div class="title_container">
+                <div class="title">პტი</div>
+                <div class="subtitle">პერიოდული ტექნიკური ინსპექტირების ბაზა</div>
+            </div>
+
+            <div class="utility_form">
+                <form action="">
+                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button type="button" value="">ძიება</button>
+                </form>
+            </div>
+
+            <!-- <div class="reply_container">
+                            <div class="reply">wv-181-wv</div>
+                        </div> -->
 
             <div class="circle_1"></div>
             <div class="circle_2"></div>
+
+            <div class="close" onclick="show_hide_utility('pti', event)">
+                <img class="close_icon" src="./images/icons/close.svg">
+
+            </div>
+
+        </div>
+
+        <div class="utility gass" onclick="show_hide_utility('gass', event)">
 
             <div class="icon">
                 <img src="./images/icons/gas-tank.svg">
@@ -28,28 +51,30 @@
 
             <div class="title_container">
                 <div class="title">გაზი</div>
-                <div class="subtitle">გაზის სისტემის პტი-ს სტატუსი</div>
+                <div class="subtitle">გაზის სისტემის პტი-ს მონაცემები</div>
             </div>
 
             <div class="utility_form">
                 <form action="">
-                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button value="">ძიება</button>
+                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button type="button" value="">ძიება</button>
                 </form>
             </div>
 
             <!-- <div class="reply_container">
                     <div class="reply">wv-181-wv</div>
                 </div> -->
-        </div>
-
-        <div class="utility taxi" onclick="show_hide_utility('taxi', event)">
-
-            <div class="close" onclick="show_hide_utility('taxi', event)">
-                <img class="close_icon" src="./images/icons/close-taxi.svg">
-            </div>
 
             <div class="circle_1"></div>
             <div class="circle_2"></div>
+
+            <div class="close" onclick="show_hide_utility('gass', event)">
+                <img class="close_icon" src="./images/icons/close.svg">
+
+            </div>
+
+        </div>
+
+        <div class="utility taxi" onclick="show_hide_utility('taxi', event)">
 
             <div class="icon">
                 <img src="./images/icons/taxi.svg">
@@ -57,18 +82,57 @@
 
             <div class="title_container">
                 <div class="title">ტაქსი</div>
-                <div class="subtitle">ტაქსის სტატუსი</div>
+                <div class="subtitle">ტაქსის სტატუსი შემოწმება</div>
             </div>
 
             <div class="utility_form">
                 <form action="">
-                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button value="">ძიება</button>
+                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button type="button" value="">ძიება</button>
                 </form>
             </div>
 
             <!-- <div class="reply_container">
-                        <div class="reply">wv-181-wv</div>
-                    </div> -->
+                    <div class="reply">wv-181-wv</div>
+                </div> -->
+
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+
+            <div class="close" onclick="show_hide_utility('taxi', event)">
+                <img class="close_icon" src="./images/icons/close.svg">
+
+            </div>
+
+        </div>
+
+        <div class="utility database" onclick="show_hide_utility('database', event)">
+
+            <div class="icon">
+                <img src="./images/icons/database.svg">
+            </div>
+
+            <div class="title_container">
+                <div class="title">მონაცემთა ბაზა</div>
+                <div class="subtitle">ძიება შიდა ბაზაში</div>
+            </div>
+
+            <div class="utility_form">
+                <form action="">
+                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button type="button" value="">ძიება</button>
+                </form>
+            </div>
+
+            <!-- <div class="reply_container">
+                    <div class="reply">wv-181-wv</div>
+                </div> -->
+
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+
+            <div class="close" onclick="show_hide_utility('database', event)">
+                <img class="close_icon" src="./images/icons/close.svg">
+
+            </div>
 
         </div>
     </div>

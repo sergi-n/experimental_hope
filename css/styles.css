@@ -42,7 +42,7 @@ td {
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    transition: right 1000ms;
+    transition: right 1000ms, top 1000ms;
 }
 
 .utility .circle_2 {
@@ -53,7 +53,7 @@ td {
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    transition: top 1000ms;
+    transition: right 1000ms, top 1000ms;
 }
 
 .utility .icon {
@@ -79,12 +79,14 @@ td {
 .utility .title {
     font-family: 'Glaho';
     font-size: 20px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .utility .subtitle {
     margin: 5px 0 0;
     font-family: 'Glaho';
     font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .utility .utility_form {
@@ -112,20 +114,25 @@ td {
     padding: 0 10px;
     font-family: 'Glaho';
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .utility input::placeholder {
     font-family: 'Glaho';
     font-size: 16px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .utility button {
     background-color: transparent;
     box-sizing: border-box;
     border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
     height: 40px;
     font-family: 'Glaho';
     font-size: 16px;
+    color: rgba(255, 255, 255, 1);
 }
 
 .utility .reply_container {
@@ -151,10 +158,11 @@ td {
 
 .utility .circle_1_extended {
     right: -150px;
+    top: 180px;
 }
 
 .utility .circle_2_extended {
-    top: -300px;
+    top: 50px;
 }
 
 .utility .title_container_extended {
@@ -182,49 +190,43 @@ td {
 }
 
 
-/* Gas */
+/* pti */
 
-.gass {
-    background-color: rgba(82, 111, 255, 0.7);
-    box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
+.pti {
+    background-color: rgba(255, 0, 0, 0.5);
+    box-shadow: 0 10px 10px rgba(39, 174, 227, 0.5);
 }
 
 .gass .circle_1 {
-    background-color: rgba(82, 111, 255, 0.6);
+    background-color: rgba(39, 174, 227, 0.5);
 }
 
 .gass .circle_2 {
-    background-color: rgba(82, 111, 255, 0.6);
+    background-color: rgba(39, 174, 227, 0.5);
 }
 
-.gass .title {
-    color: rgba(255, 255, 255, 1);
+
+/* Gas */
+
+.gass {
+    background-color: rgba(39, 174, 227, 0.6);
+    box-shadow: 0 10px 10px rgba(39, 174, 227, 0.5);
 }
 
-.gass .subtitle {
-    color: rgba(255, 255, 255, 0.7);
+.gass .circle_1 {
+    background-color: rgba(39, 174, 227, 0.5);
 }
 
-.gass input {
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-.gass input::placeholder {
-    color: rgba(255, 255, 255, 1);
-}
-
-.gass button {
-    border: 1px solid rgba(255, 255, 255, 1);
-    color: rgba(255, 255, 255, 1);
+.gass .circle_2 {
+    background-color: rgba(39, 174, 227, 0.5);
 }
 
 
 /* Taxi */
 
 .taxi {
-    background-color: rgba(243, 156, 18, 1);
-    box-shadow: 0 10px 10px rgba(243, 156, 18, 0.5);
+    background-color: rgba(243, 156, 18, 0.9);
+    box-shadow: 0 10px 10px rgba(243, 156, 18, 0.6);
 }
 
 .taxi .circle_1 {
@@ -235,24 +237,18 @@ td {
     background-color: rgba(255, 205, 59, 0.3);
 }
 
-.taxi .title {
-    color: rgba(000, 000, 000, 1);
+
+/* Database */
+
+.database {
+    background-color: rgba(82, 111, 255, 0.7);
+    box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
 }
 
-.taxi .subtitle {
-    color: rgba(000, 000, 000, 1);
+.database .circle_1 {
+    background-color: rgba(82, 111, 255, 0.6);
 }
 
-.taxi input {
-    color: rgba(000, 000, 000, 1);
-    background-color: rgba(000, 000, 000, 0.3);
-}
-
-.taxi input::placeholder {
-    color: rgba(000, 000, 000, 1);
-}
-
-.taxi button {
-    border: 1px solid rgba(000, 000, 000, 1);
-    color: rgba(000, 000, 000, 1);
+.database .circle_2 {
+    background-color: rgba(82, 111, 255, 0.6);
 }
