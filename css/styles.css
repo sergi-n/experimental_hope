@@ -23,52 +23,43 @@ td {
     margin: 50px 50px;
 }
 
-.utility_container {
-    position: relative;
-    width: 160px;
-    height: 160px;
-    border-radius: 30px;
-}
-
 .utility {
     position: relative;
+    margin: 10px;
     width: 160px;
     height: 160px;
     border-radius: 30px;
-    background-color: rgba(82, 111, 255, 0.7);
-    box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
     overflow: hidden;
+    cursor: pointer;
     transition: width 500ms, height 500ms;
 }
 
 .utility .circle_1 {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     right: -240px;
     top: -430px;
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    background-color: rgba(82, 111, 255, 0.6);
     transition: right 1000ms;
 }
 
 .utility .circle_2 {
     position: absolute;
-    z-index: -2;
+    z-index: 2;
     right: -340px;
     top: -380px;
     border-radius: 50%;
     width: 500px;
     height: 500px;
-    background-color: rgba(82, 111, 255, 0.6);
     transition: top 1000ms;
 }
 
 .utility .icon {
     position: absolute;
-    z-index: 1;
-    left: 5px;
+    z-index: 3;
+    left: 15px;
     top: 15px;
 }
 
@@ -78,7 +69,7 @@ td {
 
 .utility .title_container {
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     left: 10px;
     top: 70px;
     margin: 5px 0 0;
@@ -88,18 +79,17 @@ td {
 .utility .title {
     font-family: 'Glaho';
     font-size: 20px;
-    color: rgba(255, 255, 255, 1);
 }
 
 .utility .subtitle {
     margin: 5px 0 0;
     font-family: 'Glaho';
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .utility .utility_form {
     position: absolute;
+    z-index: 5;
     left: 10px;
     top: 100px;
     white-space: nowrap;
@@ -122,25 +112,20 @@ td {
     padding: 0 10px;
     font-family: 'Glaho';
     font-size: 16px;
-    /* color: rgba(255, 255, 255, 0.7); */
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .utility input::placeholder {
     font-family: 'Glaho';
     font-size: 16px;
-    color: rgba(000, 000, 000, 0.7);
 }
 
 .utility button {
     background-color: transparent;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 1);
     height: 40px;
     font-family: 'Glaho';
     font-size: 16px;
-    color: rgba(255, 255, 255, 1);
 }
 
 .utility .reply_container {
@@ -161,6 +146,7 @@ td {
 .utility_extended {
     width: 400px;
     height: 250px;
+    cursor: initial;
 }
 
 .utility .circle_1_extended {
@@ -172,19 +158,101 @@ td {
 }
 
 .utility .title_container_extended {
-    left: 60px;
+    left: 75px;
     top: 10px;
 }
 
 .utility .close {
+    display: none;
     position: absolute;
-    z-index: 5;
+    z-index: 6;
     right: 15px;
     top: 15px;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .utility .close img {
     display: block;
+}
+
+.utility .show_close_button {
+    display: block;
+}
+
+
+/* Gas */
+
+.gass {
+    background-color: rgba(82, 111, 255, 0.7);
+    box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
+}
+
+.gass .circle_1 {
+    background-color: rgba(82, 111, 255, 0.6);
+}
+
+.gass .circle_2 {
+    background-color: rgba(82, 111, 255, 0.6);
+}
+
+.gass .title {
+    color: rgba(255, 255, 255, 1);
+}
+
+.gass .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.gass input {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.gass input::placeholder {
+    color: rgba(255, 255, 255, 1);
+}
+
+.gass button {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Taxi */
+
+.taxi {
+    background-color: rgba(243, 156, 18, 1);
+    box-shadow: 0 10px 10px rgba(243, 156, 18, 0.5);
+}
+
+.taxi .circle_1 {
+    background-color: rgba(255, 205, 59, 0.3);
+}
+
+.taxi .circle_2 {
+    background-color: rgba(255, 205, 59, 0.3);
+}
+
+.taxi .title {
+    color: rgba(000, 000, 000, 1);
+}
+
+.taxi .subtitle {
+    color: rgba(000, 000, 000, 1);
+}
+
+.taxi input {
+    color: rgba(000, 000, 000, 1);
+    background-color: rgba(000, 000, 000, 0.3);
+}
+
+.taxi input::placeholder {
+    color: rgba(000, 000, 000, 1);
+}
+
+.taxi button {
+    border: 1px solid rgba(000, 000, 000, 1);
+    color: rgba(000, 000, 000, 1);
 }

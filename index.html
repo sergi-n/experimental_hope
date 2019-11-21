@@ -11,37 +11,77 @@
 
 <body>
     <div class="container">
-        <div class="utility gass" onclick="show_hide_utility('gass')">
-            <div class="close" onclick="show_hide_utility('gass')">
-                <img src="./images/icons/close.svg">
+
+        <div class="utility gass" onclick="show_hide_utility('gass', event)">
+
+            <div class="close" onclick="show_hide_utility('gass', event)">
+                <img class="close_icon" src="./images/icons/close-gas.svg">
+
             </div>
+
             <div class="circle_1"></div>
             <div class="circle_2"></div>
+
             <div class="icon">
                 <img src="./images/icons/gas-tank.svg">
             </div>
+
             <div class="title_container">
                 <div class="title">გაზი</div>
                 <div class="subtitle">გაზის სისტემის პტი-ს სტატუსი</div>
             </div>
+
             <div class="utility_form">
                 <form action="">
                     <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button value="">ძიება</button>
                 </form>
             </div>
+
             <!-- <div class="reply_container">
                     <div class="reply">wv-181-wv</div>
                 </div> -->
         </div>
+
+        <div class="utility taxi" onclick="show_hide_utility('taxi', event)">
+
+            <div class="close" onclick="show_hide_utility('taxi', event)">
+                <img class="close_icon" src="./images/icons/close-taxi.svg">
+            </div>
+
+            <div class="circle_1"></div>
+            <div class="circle_2"></div>
+
+            <div class="icon">
+                <img src="./images/icons/taxi.svg">
+            </div>
+
+            <div class="title_container">
+                <div class="title">ტაქსი</div>
+                <div class="subtitle">ტაქსის სტატუსი</div>
+            </div>
+
+            <div class="utility_form">
+                <form action="">
+                    <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button value="">ძიება</button>
+                </form>
+            </div>
+
+            <!-- <div class="reply_container">
+                        <div class="reply">wv-181-wv</div>
+                    </div> -->
+
+        </div>
     </div>
     <script>
-        function show_hide_utility(div, action, event) {
+        function show_hide_utility(div, event) {
 
-            console.log(event.target);
+            var target = event.target.classList[0];
 
             div = document.getElementsByClassName(div)[0];
 
-            if (action == 'show') {
+            if (target !== 'close_icon') {
+
+                console.log(div.getElementsByClassName('close')[0]);
 
                 div.classList.add('utility_container_extended');
                 div.classList.add('utility_extended');
@@ -49,15 +89,18 @@
                 div.getElementsByClassName('circle_2')[0].classList.add('circle_2_extended');
                 div.getElementsByClassName('title_container')[0].classList.add('title_container_extended');
                 div.getElementsByClassName('utility_form')[0].classList.add('show_utility_form');
-            } else if (action == 'hide') {
+                div.getElementsByClassName('close')[0].classList.add('show_close_button');
+
+            } else {
 
                 div.classList.remove('utility_extended');
                 div.getElementsByClassName('circle_1')[0].classList.remove('circle_1_extended');
                 div.getElementsByClassName('circle_2')[0].classList.remove('circle_2_extended');
                 div.getElementsByClassName('title_container')[0].classList.remove('title_container_extended');
                 div.getElementsByClassName('utility_form')[0].classList.remove('show_utility_form');
-            }
+                div.getElementsByClassName('close')[0].classList.remove('show_close_button');
 
+            }
 
         }
     </script>
