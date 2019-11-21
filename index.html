@@ -11,34 +11,53 @@
 
 <body>
     <div class="container">
-        <div class="gass" onclick="show_hide_utility('gass')">
+        <div class="utility" onclick="show_hide_utility('utility', 'show', event)">
             <div class="circle_1"></div>
             <div class="circle_2"></div>
             <div class="icon">
-                <img src="./images/icons/gas-tank.svg" alt="">
+                <img src="./images/icons/gas-tank.svg">
+            </div>
+            <div class="close" onclick="show_hide_utility('utility', 'hide', event)">
+                <img src="./images/icons/close.svg">
             </div>
             <div class="title_container">
                 <div class="title">გაზი</div>
                 <div class="subtitle">გაზის სისტემის პტი-ს სტატუსი</div>
             </div>
-            <div class="gass_form">
+            <div class="utility_form">
                 <form action="">
                     <input type="text" placeholder="სახ. ნომერი ან ვინ კოდი" onclick="this.placeholder = '';" onblur="this.placeholder ='სახ. ნომერი ან ვინ კოდი'"><button value="">ძიება</button>
                 </form>
             </div>
-            <div class="reply_container">
+            <!-- <div class="reply_container">
                 <div class="reply">wv-181-wv</div>
-            </div>
+            </div> -->
         </div>
     </div>
     <script>
-        function show_hide_utility(div) {
+        function show_hide_utility(div, action, event) {
+
+            // console.log(event.target);
+
             div = document.getElementsByClassName(div)[0];
-            div.classList.toggle('gass_extended');
-            div.getElementsByClassName('circle_1')[0].classList.toggle('circle_1_extended');
-            div.getElementsByClassName('circle_2')[0].classList.toggle('circle_2_extended');
-            div.getElementsByClassName('title_container')[0].classList.toggle('title_container_extended');
-            div.getElementsByClassName('gass_form')[0].classList.toggle('show_gass_form');
+
+            if (action == 'show') {
+                console.log('gaxsna');
+                div.classList.add('utility_extended');
+                div.getElementsByClassName('circle_1')[0].classList.add('circle_1_extended');
+                div.getElementsByClassName('circle_2')[0].classList.add('circle_2_extended');
+                div.getElementsByClassName('title_container')[0].classList.add('title_container_extended');
+                div.getElementsByClassName('utility_form')[0].classList.add('show_utility_form');
+            } else if (action == 'hide') {
+                console.log('daxurva');
+                div.classList.remove('gass_extended');
+                div.getElementsByClassName('circle_1')[0].classList.remove('circle_1_extended');
+                div.getElementsByClassName('circle_2')[0].classList.remove('circle_2_extended');
+                div.getElementsByClassName('title_container')[0].classList.remove('title_container_extended');
+                div.getElementsByClassName('gass_form')[0].classList.remove('show_gass_form');
+            }
+
+
         }
     </script>
 </body>

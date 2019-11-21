@@ -23,25 +23,20 @@ td {
     margin: 50px 0;
 }
 
-.gass {
+.utility {
     margin: auto;
     /*  */
     position: relative;
     width: 160px;
     height: 160px;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: rgba(82, 111, 255, 0.7);
     box-shadow: 0 10px 10px rgba(82, 111, 255, 0.5);
     overflow: hidden;
     transition: width 500ms, height 500ms;
 }
 
-.gass_extended {
-    width: 350px;
-    height: 200px;
-}
-
-.gass .circle_1 {
+.utility .circle_1 {
     position: absolute;
     z-index: -1;
     right: -240px;
@@ -53,11 +48,7 @@ td {
     transition: right 1000ms;
 }
 
-.gass .circle_1_extended {
-    right: -150px;
-}
-
-.gass .circle_2 {
+.utility .circle_2 {
     position: absolute;
     z-index: -2;
     right: -340px;
@@ -69,49 +60,40 @@ td {
     transition: top 1000ms;
 }
 
-.gass .circle_2_extended {
-    top: -300px;
-}
-
-.gass .icon {
+.utility .icon {
     position: absolute;
-    left: 0;
-    top: 20px;
+    z-index: 1;
+    left: 5px;
+    top: 15px;
 }
 
-.gas .icon img {
+.utility .icon img {
     display: block;
 }
 
-.gass .title_container {
+.utility .title_container {
     position: absolute;
+    z-index: 2;
     left: 10px;
     top: 70px;
     margin: 5px 0 0;
     transition: left 500ms, top 500ms;
 }
 
-.gass .title_container_extended {
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    margin: 5px 0 0;
-}
-
-.gass .title {
+.utility .title {
     font-family: 'Glaho';
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
 }
 
-.gass .subtitle {
+.utility .subtitle {
     margin: 5px 0 0;
     font-family: 'Glaho';
     font-size: 13px;
     color: rgba(255, 255, 255, 0.7);
 }
 
-.gass .gass_form {
+.utility .utility_form {
     position: absolute;
     left: 10px;
     top: 100px;
@@ -120,48 +102,83 @@ td {
     transition: opacity 500ms;
 }
 
-.gass .show_gass_form {
+.utility .show_utility_form {
     opacity: 1;
 }
 
-.gass input {
+.utility input {
     outline: none;
     margin: 0 10px 0 0;
     box-sizing: border-box;
+    border-radius: 10px;
     border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
     width: 250px;
-    height: 25px;
+    height: 40px;
+    padding: 0 10px;
     font-family: 'Glaho';
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: transparent;
+    /* color: rgba(255, 255, 255, 0.7); */
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.gass input::placeholder {
+.utility input::placeholder {
     font-family: 'Glaho';
     font-size: 16px;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(000, 000, 000, 0.7);
 }
 
-.gass button {
+.utility button {
     background-color: transparent;
     box-sizing: border-box;
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 1);
-    height: 25px;
+    height: 40px;
     font-family: 'Glaho';
     font-size: 16px;
     color: rgba(255, 255, 255, 1);
 }
 
-.gass .reply_container {
+.utility .reply_container {
     position: absolute;
     left: 10px;
     top: 150px;
 }
 
-.gass .reply {
+.utility .reply {
     font-family: 'Glaho';
     font-size: 20px;
     color: rgba(255, 255, 255, 1);
+}
+
+.utility .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.utility .close img {
+    display: block;
+}
+
+
+/* Extended utility */
+
+.utility_extended {
+    width: 400px;
+    height: 250px;
+}
+
+.utility .circle_1_extended {
+    right: -150px;
+}
+
+.utility .circle_2_extended {
+    top: -300px;
+}
+
+.utility .title_container_extended {
+    left: 60px;
+    top: 10px;
 }
