@@ -20,12 +20,17 @@ td {
 }
 
 .container {
-    margin: 50px 0;
+    margin: 50px 50px;
+}
+
+.utility_container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 30px;
 }
 
 .utility {
-    margin: auto;
-    /*  */
     position: relative;
     width: 160px;
     height: 160px;
@@ -150,20 +155,13 @@ td {
     color: rgba(255, 255, 255, 1);
 }
 
-.utility .close {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 30px;
-    height: 30px;
-}
-
-.utility .close img {
-    display: block;
-}
-
 
 /* Extended utility */
+
+.utility_container_extended {
+    width: 400px;
+    height: 250px;
+}
 
 .utility_extended {
     width: 400px;
@@ -181,4 +179,17 @@ td {
 .utility .title_container_extended {
     left: 60px;
     top: 10px;
+}
+
+.utility_container .close {
+    position: absolute;
+    z-index: 5;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.utility .close img {
+    display: block;
 }

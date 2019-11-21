@@ -11,14 +11,14 @@
 
 <body>
     <div class="container">
-        <div class="utility" onclick="show_hide_utility('utility', 'show', event)">
+        <div class="utility gass" onclick="show_hide_utility('gass', 'show', event)">
+            <div class="close" onclick="show_hide_utility('gass', 'hide', event)">
+                <img src="./images/icons/close.svg">
+            </div>
             <div class="circle_1"></div>
             <div class="circle_2"></div>
             <div class="icon">
                 <img src="./images/icons/gas-tank.svg">
-            </div>
-            <div class="close" onclick="show_hide_utility('utility', 'hide', event)">
-                <img src="./images/icons/close.svg">
             </div>
             <div class="title_container">
                 <div class="title">გაზი</div>
@@ -30,8 +30,8 @@
                 </form>
             </div>
             <!-- <div class="reply_container">
-                <div class="reply">wv-181-wv</div>
-            </div> -->
+                    <div class="reply">wv-181-wv</div>
+                </div> -->
         </div>
     </div>
     <script>
@@ -42,19 +42,20 @@
             div = document.getElementsByClassName(div)[0];
 
             if (action == 'show') {
-                console.log('gaxsna');
+                // console.log('gaxsna');
+                div.classList.add('utility_container_extended');
                 div.classList.add('utility_extended');
                 div.getElementsByClassName('circle_1')[0].classList.add('circle_1_extended');
                 div.getElementsByClassName('circle_2')[0].classList.add('circle_2_extended');
                 div.getElementsByClassName('title_container')[0].classList.add('title_container_extended');
                 div.getElementsByClassName('utility_form')[0].classList.add('show_utility_form');
             } else if (action == 'hide') {
-                console.log('daxurva');
-                div.classList.remove('gass_extended');
+                // console.log('daxurva');
+                div.classList.remove('utility_extended');
                 div.getElementsByClassName('circle_1')[0].classList.remove('circle_1_extended');
                 div.getElementsByClassName('circle_2')[0].classList.remove('circle_2_extended');
                 div.getElementsByClassName('title_container')[0].classList.remove('title_container_extended');
-                div.getElementsByClassName('gass_form')[0].classList.remove('show_gass_form');
+                div.getElementsByClassName('utility_form')[0].classList.remove('show_utility_form');
             }
 
 
