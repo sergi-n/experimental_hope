@@ -26,8 +26,8 @@ td {
 .utility {
     position: relative;
     margin: 10px;
-    width: 160px;
-    height: 160px;
+    width: 125px;
+    height: 125px;
     border-radius: 30px;
     overflow: hidden;
     cursor: pointer;
@@ -71,14 +71,14 @@ td {
     position: absolute;
     z-index: 4;
     left: 10px;
-    top: 70px;
+    top: 50px;
     margin: 5px 0 0;
     transition: left 500ms, top 500ms;
 }
 
 .utility .title {
     font-family: 'Glaho';
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -90,17 +90,19 @@ td {
 }
 
 .utility .utility_form {
+    display: none;
     position: absolute;
     z-index: 5;
     left: 10px;
     top: 100px;
     white-space: nowrap;
-    opacity: 0;
-    transition: opacity 500ms;
+    /* opacity: 0; */
+    /* transition: opacity 500ms; */
 }
 
 .utility .show_utility_form {
-    opacity: 1;
+    /* opacity: 1; */
+    display: block;
 }
 
 .utility input {
